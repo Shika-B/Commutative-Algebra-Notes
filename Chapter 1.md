@@ -24,5 +24,37 @@ Let's now suppose $f, g$ are primitive and $fg$ is not, and let $I$ be a prime i
 ### Exercise 3
 Induction (too lazy to do it properly)
 
-### Exercice 4
-Let $f$ be in the Jacobson radical. We will show $f$ is nilpotent. For any $g \in A[X]$, $1 - fg$ is a unit. That means that for any $y \in A$, $1 - f(0)y$
+### Exercise 4
+Let $f$ be in the Jacobson radical. We will show $f$ is nilpotent. For any $g \in A[X]$, $1 - gf$ is a unit. Setting $g = x$, we get that $1 - xf$ is a unit. By exercise 2, this mean all of the coefficients of $f$ are nilpotent, that is, $f$ is nilpotent.
+
+### Exercise 5
+i) If $f$ is a unit, with inverse $g$, $f(0)g(0) = 1$ and $a_0$ is a unit.
+
+In the other direction, assuming $a_0$ is a unit we construct the coefficients $(b_n)$ of an inverse $g = \sum_n b_nx^n$ inductively. Set $b_0 = \frac{1}{a_0}$. Assuming $b_0, \ldots, b_n$ are already defined, let $b_{n+
+1} = -a_0^{-1}(b_na_1 + \ldots + b_0a_{n+1})$. It is now routine to check that $fg = 1$
+
+ii) We argue similarly to exercise 2. If $f$ is nilpotent, $f(0)$ is nilpotent, and then $f - f(0)$ is nilpotent and finally $\frac{f-f(0)}{x}$ is nilpotent.
+
+As for the converse, let $A = \bigoplus_{n = 1}^\infty \mathbb{Z}/p^n\mathbb{Z}$ and let $a_n = (p \delta_{i, n})_{i \in \mathbb{N}^*}$. Clearly, each $a_n$ is nilpotent. The $n$th coefficient of $f^k$ is $[n]f^k = \displaystyle\sum_{i_1 + \ldots + i_k = n}{a_{i_1} \ldots a_{i_k}}$. For it to be zero, we must have in particular that the nth coordinate (of the nth coefficient...) is zero. It is equal to $kp$, since any term containing $a_n$ as a factor must have the $k$th other factor to be $a_0$, and there is then $k$ choice for the position of the $a_n$ coefficient. For $n$ large enough, $kp \neq 0 \pmod p^n$, and thus $f^k \neq 0$. 
+
+iii) If $f$ is in the Jacobson radical of $A[[X]]$, then for any constant $b$, $1 - fb$ is a unit and thus $1-f(0)b$ is a unit, meaning $a_0$ is in the Jacobson radical of $A$. 
+
+We showed in i) that $1-fg$ is a unit iff $1-f(0)g(0)$ is a unit. If $f(0)$ is in the Jacobson radical, then $1-f(0)g(0)$ is always invertible and we're done.
+
+iv) Let $\pi: A[[X]] \to A$ be the quotient map and $\mathfrak{m}$ be a maximal ideal of $A[[X]]$. As $\pi$ is surjective, $\mathfrak{m}^c = \pi(\mathfrak{m})$ is an ideal, and the image of a maximal ideal is maximal.
+We clearly have $\mathfrak{m} \subset (\mathfrak{m}^c, x)$, and since $(\mathfrak{m}^c, x) \subsetneq A[[X]$, maximality gives $\mathfrak{m} = (\mathfrak{m}^c, x)$. 
+
+v) Let $\mathfrak{p}$ be a prime ideal of $A$. Then $I = (\mathfrak{p}, x)$ is a prime ideal of $A[[X]]$, with contraction $\mathfrak{p}$. Indeed, $A[[X]]/\mathfrak{p} \simeq A/\mathfrak{p}$. 
+
+### Exercise 6
+
+Assume $\mathfrak{n} \subsetneq \mathfrak{r}$. Then there is some idempotent $e \in \mathfrak{r}$, meaning that $1-e$ is both invertible and a zero divisor, as $e(1-e) = 0$, absurd.
+
+### Exercise 7
+Let $\mathfrak{p}$ be a prime ideal, and $\pi: A \to A/\mathfrak{p}$ the quotient map. For any $x \in A/\mathfrak{p}$, there is some $n \in \mathbb{N}$ such that $x^n = x \iff x(x^{n-1} - 1) = 0$. For any $x \neq 0$, $x^{n-1} = 1$, meaning $x$ is invertible, and $A/\mathfrak{p}$ is a field. 
+
+### Exercise 8
+Let $\{\mathfrak{p}_i \mid i \in I \}$ be a totally ordered set of prime ideals. We show that $\mathfrak{q} = \bigcap_i \mathfrak{p}_i$ is still a prime ideal. Indeed, it is an ideal and if $xy \in \mathfrak{q}$, and $x \not\in \mathfrak{q}$, there is a $\mathfrak{p}_i$ such that $x \not\in \mathfrak{p}_i$. It follows that for any $\mathfrak{p}_j$, the possibilities are:
+- $y \in \mathfrak{p}_j$ if $\mathfrak{p}_i \subset \mathfrak{p}_j$ 
+- Otherwise, $\mathfrak{p}_j \subset \mathfrak{p}_i$ and $x$ or $y$ must be in $\mathfrak{p}_j$, $x$ can't be, so $y \in \mathfrak{p}_j$.
+In any case, we conclude that $y \in \mathfrak{q}$. 
