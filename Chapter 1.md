@@ -103,8 +103,10 @@ For any prime $\mathfrak{p}$,$\mathfrak{a} \cap \mathfrak{b} \subset \mathfrak{p
 - $Spec(\mathbf{R})$ is a single point $0$.
 - Nonzero prime ideals of $\mathbf{C}[X]$ are in correspondence with irreductible monic polynomials over $\mathbf{C}$, that is of the form $(X-z), z \in \mathbf{C}$.
 - Same thing except that we add polynomials of the form $x^2 + ax + b$ with $a^2 - 4b < 0$ 
+- Let $\mathfrak{p}$ be a prime ideal of $\mathbb{Z}[X]$ and let $(p) = \mathfrak{p} \cap \mathbb{Z}$. As any retract of a prime ideal is prime, $p$ must be a prime or $0$.  
+If $p = 0$, let $f \in \mathfrak{p}$ of minimal degree, $f$ must be irreducible over $\mathbb{Q}$, and we write $f = \alpha f'$ with $f'$ irreducible over $\mathbb{Z}$  and $\alpha \in \mathbb{Z}^*$ by Gauss' lemma. Since $\alpha \not\in \mathfrak{p}$, $f' \in \mathfrak{p}$ and $\mathfrak{p} = (f')$.
+Otherwise, $\mathfrak{p}$ induces a prime ideal of $\mathbf{F}_p[X]$ through a quotient by $(p)$ and it must be of the form $(f)$ with $f$ irreducible over $\mathbf{F}_p$, that is $\mathfrak{p}= (p, f)$.
 ### Exercise 17
-
 We have the equality $V(\mathfrak{a}) = \bigcap_{a \in \mathfrak{a}}V(a)$ by exercise 15. It follows that the $X_a = X \setminus V(a)$ form a basis of open sets.
 
 i) Exercise 15 gives $V(a) \cup V(b) = V(ab)$ giving $X_a \cap X_b = X_{ab}$
@@ -113,6 +115,4 @@ iii) $X_f = X$ means that it is in no prime ideal. By Krull's theorem, $(f) = A$
 iv) $X_f = X_g$ means that $f \in \mathfrak{p} \iff g \in \mathfrak{p}$ for any prime $\mathfrak{p}$. It follows that intersecting over that property $r((f)) = r((g))$.
 v) It is enough to consider a covering given by the basis of open sets: $X = \bigcup_{i \in I} X_{x_i}$. This equality gives $\bigcap_{i \in I} V((x_i)) = V((x_i)_{i \in I}) = \varnothing$, i.e $(x_i)_{i \in I} = (1)$, and there is a finite subset generating $1$, giving a finite subcover.
 vi) This time, a covering may be reduced to something of the form $X_f \subset \bigcup_{i \in I} X_{x_i}$. It implies $V((x_i)_{i \in I}) \subset V(f)$, and thus $f \in r((x_i)_{i \in I})$, meaning there is some $n \in \mathbb{N}$ such that $f^n \in ((x_i)_{i \in I})$, and there is finitely many $x_i$'s generating $f^n$. Then $f^n$ is in any prime ideal containing all these $x_i$, and thus $f$ by primality.
-vii) If $U$ is a finite union of $X_f$, since a finite union of quasi-compact spaces is still quasi-compact, $U$ is quasi-compact.
-
-Now assume $U$ is quasi-compact and consider the family of open sets given by the set of all $X_f$ such that $X_f \subset U$. As the $X_f$ are a basis, this is an open-cover. The result follows.
+vii) If $U$ is a finite union of $X_f$, since a finite union of quasi-compact spaces is still quasi-compact, $U$ is quasi-compact. Now assume $U$ is quasi-compact and consider the family of open sets given by the set of all $X_f$ such that $X_f \subset U$. As the $X_f$ are a basis, this is an open-cover. The result follows.
