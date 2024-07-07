@@ -47,7 +47,6 @@ We clearly have $\mathfrak{m} \subset (\mathfrak{m}^c, x)$, and since $(\mathfra
 v) Let $\mathfrak{p}$ be a prime ideal of $A$. Then $I = (\mathfrak{p}, x)$ is a prime ideal of $A[[X]]$, with contraction $\mathfrak{p}$. Indeed, $A[[X]]/\mathfrak{p} \simeq A/\mathfrak{p}$. 
 
 ### Exercise 6
-
 Assume $\mathfrak{n} \subsetneq \mathfrak{r}$. Then there is some idempotent $e \in \mathfrak{r}$, meaning that $1-e$ is both invertible and a zero divisor, as $e(1-e) = 0$, absurd.
 
 ### Exercise 7
@@ -57,4 +56,63 @@ Let $\mathfrak{p}$ be a prime ideal, and $\pi: A \to A/\mathfrak{p}$ the quotien
 Let $\{\mathfrak{p}_i \mid i \in I \}$ be a totally ordered set of prime ideals. We show that $\mathfrak{q} = \bigcap_i \mathfrak{p}_i$ is still a prime ideal. Indeed, it is an ideal and if $xy \in \mathfrak{q}$, and $x \not\in \mathfrak{q}$, there is a $\mathfrak{p}_i$ such that $x \not\in \mathfrak{p}_i$. It follows that for any $\mathfrak{p}_j$, the possibilities are:
 - $y \in \mathfrak{p}_j$ if $\mathfrak{p}_i \subset \mathfrak{p}_j$ 
 - Otherwise, $\mathfrak{p}_j \subset \mathfrak{p}_i$ and $x$ or $y$ must be in $\mathfrak{p}_j$, $x$ can't be, so $y \in \mathfrak{p}_j$.
-In any case, we conclude that $y \in \mathfrak{q}$. 
+In any case, we conclude that $y \in \mathfrak{q}$. Zorn then applies.
+
+### Exercise 9
+If $\mathfrak{a} = r(\mathfrak{a})$ then since $r(\mathfrak{a})$ is the intersection of the prime ideals containing $\mathfrak{a}$, $\mathfrak{a}$ is indeed an intersection of prime ideals.
+
+Now, assume $\mathfrak{a} = \bigcap_i \mathfrak{p}_i$. For any $i$, we have $\mathfrak{a} \subset \mathfrak{p}_i$, meaning $r(\mathfrak{a}) \subset \cap_i \mathfrak{p}_i = \mathfrak{a}$ and the other inclusion always holds, that is $\mathfrak{a} = r(\mathfrak{a})$. 
+
+### Exercise 10
+Assume i), we show ii). Let $\mathfrak{p}$ be that prime ideal and let $x$ not be a unit. Then $x$ is contained in some prime ideal, which must be $\mathfrak{p}$. Then $x$ is in the nilradical, that is $x$ is nilpotent.
+
+Assume ii), we show iii). Let $\pi: A \to A/\mathfrak{R}$ be the quotient map. For any $x \in A$, either $x$ is nilpotent and $\pi(x) = 0$ or $x$ is a unit, meaning $\pi(x)$ is invertible. As $\pi$ is surjective, $A/\mathfrak{R}$ is a field.
+
+Assume iii), we show i). Prime ideals of $A$ (containing $\mathfrak{R}$, which is a trivial condition) and prime ideals of $A/\mathfrak{R}$ are in bijective correspondence. Since $A/\mathfrak{R}$ is a field, the only prime ideal of $A$ is $\pi^{-1}(0) = \mathfrak{R}$. 
+
+### Exercise 11
+i) Since $2 \in A$, $2 = 2^2 = 4$, meaning $2x = 4x \iff 2x = 0$
+ii) Let $\mathfrak{p}$ be a prime ideal. Since $A/\mathfrak{p}$ is integral, $x^2 = x$ gives $x(x-1) = 0$, meaning $x \in \{0; 1\}$. Since $A/\mathfrak{p} \neq 0$, we get $A/\mathfrak{p} \sim \mathbf{F}_2$ 
+iii) Let $\mathfrak{q}$ be a finitely generated ideal of $A$, with set of generators $\{x_1, \ldots, x_n\}$. Assume $n > 1$, then $x_1 \neq x_2$. Let $y = x_1 + x_2 + x_1x_2$. Computations give $x_1y = x_1$ and $x_2y = x_2$, that is $\mathfrak{q} = (x_1, x_2, \ldots, x_n) = (y, x_3, \ldots, x_n)$. Iterating this process, we get that $\mathfrak{q}$ is principal.
+
+### Exercise 12
+A nontrivial idempotent $e \in A$ gives a nontrivial decomposition $A \simeq A/e \times A/(1-e)$. Indeed, $(e)$ and $(1-e)$ are coprime ideals and CRT applies. A maximal ideal $\mathfrak{m}$ of $A/e$ gives a maximal ideal $\mathfrak{m} \times A/(1-e)$ of $A$, and symetrically. This gives atleast two distinct maximal ideals, as the decomposition is nontrivial.
+
+### Exercise 13
+Let $K$ be a field, $\Sigma$ the set of all its irreducible polynomials and $A$ be the polynomial ring $K[x_f \mid f \in \Sigma]$. Let $\mathfrak{a} = (f(x_f))_{f \in \Sigma}$.
+For any $p \in \mathfrak{a}$, $p = \sum_{f \in \Sigma}{g_f f(x_f)}$ with finitely many $g_f \in A$ being non-zero. Setting each of these $x_f$ to be a root of $f$ in a finite extension of $K$ gives that $p \neq 1$, and as $p$ is arbitrary, $\mathfrak{a} = (1)$. 
+We now let $\mathfrak{m}$ be a maximal ideal containing $\mathfrak{a}$ and $K_1 = A/\mathfrak{m}$. Repeating the construction, we get some increasing sequence of fields $K_1, K_2, \ldots$ and let $L = \bigcup_{n = 1}^{\infty} K_n$.
+The fact that any $f \in \Sigma$ of degree $n+1$ splits in $K_n$ is clear by induction, and it follows that any $f \in \Sigma$ splits in $L$. Let $\overline{K}$ be the subset of $L$ of algebraic elements over $K$.  Any finite extension $F/\overline{K}$ is in $L$, as if $f \in \overline{K}[X]$ we must have $f \in K_n[X]$ for $n$ large enough. Since $F$ is a subset of $L$ algebraic over $K$, it follows that $F = \overline{K}$ and $\overline{K}$ is algebraically closed.
+
+### Exercise 14
+Wrong proof: See [here]([https://math.stackexchange.com/questions/1859329/atiyah-macdonald-exercise-14-chapter-1](https://math.stackexchange.com/questions/1859329/atiyah-macdonald-exercise-14-chapter-1 "https://math.stackexchange.com/questions/1859329/atiyah-macdonald-exercise-14-chapter-1"))
+
+Correct proof:
+Increasing union of ideals is an ideal, so Zorn applies. 
+Let $\mathfrak{a}$ be a maximal ideal in $\Sigma$ and $xy \in \mathfrak{a}$. We have $(\mathfrak{a}, x)(\mathfrak{a}, y) \subset (\mathfrak{a}, xy) = \mathfrak{a}$. By maximality, if $x, y \not\in \mathfrak{a}$, there is a non-zerodivisor in $(\mathfrak{a}, x)$ and $(\mathfrak{a}, y)$. Product of non-zerodivisor is not a zerodivisor, absurd.
+
+### Exercise 15
+i) $V(E) = V(\mathfrak{a})$ is clear, as is $V(\mathfrak{a}) = V(r(\mathfrak{a})$
+ii) Same
+iii) Same 
+iv) The inclusion $\mathfrak{a}\mathfrak{b} \subset \mathfrak{a} \cap \mathfrak{b}$, gives $V(\mathfrak{a} \cap \mathfrak{b}) \subset V(\mathfrak{a}\mathfrak{b})$ Now let $\mathfrak{ab}\subset \mathfrak{p}$ be a prime. For any $x \in \mathfrak{a} \cap \mathfrak{b}$, $x^2 \in \mathfrak{ab} \subset \mathfrak{p}$ giving $x \in \mathfrak{p}$, and the reverse inclusion.
+For any prime $\mathfrak{p}$,$\mathfrak{a} \cap \mathfrak{b} \subset \mathfrak{p}$  implies $\mathfrak{a} \subset \mathfrak{p}$ or $\mathfrak{b} \subset \mathfrak{p}$, meaning $V(\mathfrak{a} \cap \mathfrak{b}) \subset V(\mathfrak{a}) \cup  V(\mathfrak{b})$. The other inclusion is clear.
+
+### Exercise 16
+- $Spec(\mathbf{Z})$ is $\{0\}$ and the set of positive primes  $\mathbf{P}$  
+- $Spec(\mathbf{R})$ is a single point $0$.
+- Nonzero prime ideals of $\mathbf{C}[X]$ are in correspondence with irreductible monic polynomials over $\mathbf{C}$, that is of the form $(X-z), z \in \mathbf{C}$.
+- Same thing except that we add polynomials of the form $x^2 + ax + b$ with $a^2 - 4b < 0$ 
+### Exercise 17
+
+We have the equality $V(\mathfrak{a}) = \bigcap_{a \in \mathfrak{a}}V(a)$ by exercise 15. It follows that the $X_a = X \setminus V(a)$ form a basis of open sets.
+
+i) Exercise 15 gives $V(a) \cup V(b) = V(ab)$ giving $X_a \cap X_b = X_{ab}$
+ii) $X_f = \varnothing$ means $f$ is in every prime ideal, i.e $f$ is in the nilradical, so $f$ is nilpotent
+iii) $X_f = X$ means that it is in no prime ideal. By Krull's theorem, $(f) = A$ and $f$ is a unit
+iv) $X_f = X_g$ means that $f \in \mathfrak{p} \iff g \in \mathfrak{p}$ for any prime $\mathfrak{p}$. It follows that intersecting over that property $r((f)) = r((g))$.
+v) It is enough to consider a covering given by the basis of open sets: $X = \bigcup_{i \in I} X_{x_i}$. This equality gives $\bigcap_{i \in I} V((x_i)) = V((x_i)_{i \in I}) = \varnothing$, i.e $(x_i)_{i \in I} = (1)$, and there is a finite subset generating $1$, giving a finite subcover.
+vi) This time, a covering may be reduced to something of the form $X_f \subset \bigcup_{i \in I} X_{x_i}$. It implies $V((x_i)_{i \in I}) \subset V(f)$, and thus $f \in r((x_i)_{i \in I})$, meaning there is some $n \in \mathbb{N}$ such that $f^n \in ((x_i)_{i \in I})$, and there is finitely many $x_i$'s generating $f^n$. Then $f^n$ is in any prime ideal containing all these $x_i$, and thus $f$ by primality.
+vii) If $U$ is a finite union of $X_f$, since a finite union of quasi-compact spaces is still quasi-compact, $U$ is quasi-compact.
+
+Now assume $U$ is quasi-compact and consider the family of open sets given by the set of all $X_f$ such that $X_f \subset U$. As the $X_f$ are a basis, this is an open-cover. The result follows.
