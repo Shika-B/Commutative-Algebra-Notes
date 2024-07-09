@@ -116,3 +116,17 @@ iv) $X_f = X_g$ means that $f \in \mathfrak{p} \iff g \in \mathfrak{p}$ for any 
 v) It is enough to consider a covering given by the basis of open sets: $X = \bigcup_{i \in I} X_{x_i}$. This equality gives $\bigcap_{i \in I} V((x_i)) = V((x_i)_{i \in I}) = \varnothing$, i.e $(x_i)_{i \in I} = (1)$, and there is a finite subset generating $1$, giving a finite subcover.
 vi) This time, a covering may be reduced to something of the form $X_f \subset \bigcup_{i \in I} X_{x_i}$. It implies $V((x_i)_{i \in I}) \subset V(f)$, and thus $f \in r((x_i)_{i \in I})$, meaning there is some $n \in \mathbb{N}$ such that $f^n \in ((x_i)_{i \in I})$, and there is finitely many $x_i$'s generating $f^n$. Then $f^n$ is in any prime ideal containing all these $x_i$, and thus $f$ by primality.
 vii) If $U$ is a finite union of $X_f$, since a finite union of quasi-compact spaces is still quasi-compact, $U$ is quasi-compact. Now assume $U$ is quasi-compact and consider the family of open sets given by the set of all $X_f$ such that $X_f \subset U$. As the $X_f$ are a basis, this is an open-cover. The result follows.
+
+### Exercise 18
+i) If $\{x\}$ is closed means there is some ideal $\mathfrak{a}$ such that $\{x\}= V(\mathfrak{a})$. We must have $\mathfrak{p}_x = \mathfrak{a}$, and if $\mathfrak{p}_x$ is not maximal then any larger ideal containing it contradicts the equality.
+
+Reciprocally if $\mathfrak{p}_x$ is maximal, $V(\mathfrak{p}_x) = \{x\}$.
+
+ii) Let $V(\mathfrak{a})$ be any closed set containing $\mathfrak{p}_x$.  As $\mathfrak{p}_x \in V(\mathfrak{a})$, we must have $V(\mathfrak{p}_x) \subset V(\mathfrak{a})$.
+
+iii) We just showed that $y \in \overline{\{x\}} \iff y \in V(\mathfrak{p}_x)$, which in turn gives $\mathfrak{p}_x \subset \mathfrak{p}_y$ by definition.
+
+iv) Let $x \neq y$, and assume $y \in \overline{\{x\}}$, as otherwise we are done. Then by iii), $\mathfrak{p}_x \subsetneq \mathfrak{p}_y$ and $x \in X\setminus\overline{\{x\}}$.
+
+### Exercise 19
+
