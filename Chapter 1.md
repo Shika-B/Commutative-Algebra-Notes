@@ -134,3 +134,16 @@ Let's denote by $\mathfrak{n}$ the nilradical.
 Assume $\mathfrak{n}$ is prime, we show $X$ is irreducible. It is enough to show that basic open set intersect. By hypothesis $\mathfrak{n} \in X$,  and for basic open sets $X_f, X_g \neq \varnothing$, we must have $f, g \not\in \mathfrak{n}$, that is $\mathfrak{n} \in X_f \cap X_g$
 
 Now assume $X$ is irreducible and let $X_f, X_g$ be non-empty basic open sets (that is $f, g \not\in \mathfrak{n}$). Since $X_f \cap X_g = X_{fg} \neq \varnothing$, we get $fg \not\in \mathfrak{n}$. 
+
+### Exercise 20
+Let $X$ be a top space.
+i) Let $Y \subset X$ be irreducible and $O \subset X$ be open. Then $O \cap Y$ is dense in $Y$, that is any closed set containing $O \cap Y$ contains $Y$, and thus contains $\overline{Y}$. It implies that $O \cap Y$ is still dense in $\overline{Y}$ and a fortiori $O \cap \overline{Y}$ is. 
+
+ii) Let $Y_i$ be irreducible subspaces totally ordered subspace ordered by inclusion and $Y = \bigcup_i Y_i$. Let $O \subset X$ be open. For any $i$, $Y_i \cap O$ is dense in $Y_i$. That is $O \cap Y$ is an open subset of $Y$ whose closure contains $Y_i$, for $i$ arbitrary, i.e it contains $Y$. Zorn holds and yadi yada
+
+iii) If they're not closed, by i) taking closure gives a strictly larger irreducible subspace. In an Hausdorff space, sets containing atleast two points cannot be irreducible, meaning irreducible components are singletons.
+
+iv) Let $V(\mathfrak{a})$ be a maximal irreducible subset of $X$, with $\mathfrak{a}$ radical. Let $ab \in \mathfrak{a}$. Radicality gives $V(\mathfrak{a}, a) \cup V(\mathfrak{a}, b) = V(\mathfrak{a})$ and irreducibility implies one of these is equal to $V(\mathfrak{a})$, that is $\mathfrak{a}$ is prime.
+
+### Exercise 21
+
