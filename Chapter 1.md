@@ -129,4 +129,8 @@ iii) We just showed that $y \in \overline{\{x\}} \iff y \in V(\mathfrak{p}_x)$, 
 iv) Let $x \neq y$, and assume $y \in \overline{\{x\}}$, as otherwise we are done. Then by iii), $\mathfrak{p}_x \subsetneq \mathfrak{p}_y$ and $x \in X\setminus\overline{\{x\}}$.
 
 ### Exercise 19
+Let's denote by $\mathfrak{n}$ the nilradical. 
 
+Assume $\mathfrak{n}$ is prime, we show $X$ is irreducible. It is enough to show that basic open set intersect. By hypothesis $\mathfrak{n} \in X$,  and for basic open sets $X_f, X_g \neq \varnothing$, we must have $f, g \not\in \mathfrak{n}$, that is $\mathfrak{n} \in X_f \cap X_g$
+
+Now assume $X$ is irreducible and let $X_f, X_g$ be non-empty basic open sets (that is $f, g \not\in \mathfrak{n}$). Since $X_f \cap X_g = X_{fg} \neq \varnothing$, we get $fg \not\in \mathfrak{n}$. 
