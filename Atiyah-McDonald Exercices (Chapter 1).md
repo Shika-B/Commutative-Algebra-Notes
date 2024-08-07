@@ -146,4 +146,13 @@ iii) If they're not closed, by i) taking closure gives a strictly larger irreduc
 iv) Let $V(\mathfrak{a})$ be a maximal irreducible subset of $X$, with $\mathfrak{a}$ radical. Let $ab \in \mathfrak{a}$. Radicality gives $V(\mathfrak{a}, a) \cup V(\mathfrak{a}, b) = V(\mathfrak{a})$ and irreducibility implies one of these is equal to $V(\mathfrak{a})$, that is $\mathfrak{a}$ is prime.
 
 ### Exercise 21
+If $\mathfrak{q}$ is prime and $xy \in \phi^{-1}(\mathfrak{q})$ then $\phi(x)\phi(y) \in \mathfrak{q}$, meaning wlog $\phi(x) \in \mathfrak{q}$, that is $\phi^{-1}(\mathfrak{q})$ is prime.
 
+i) Let $\mathfrak{p}$ be a prime ideal containing $   
+
+### Exercise 22
+Let $\mathfrak{p}$ be a prime ideal of a finite product $A = \prod_{i = 1}^{n} A_i$ and let $e_1, \ldots, e_n$ be such that $e_i$ is $0$ except at the $i$-th component where it is equal to $1$. Since $\mathfrak{p}$ is proper, some $e_i \not\in \mathfrak{p}$, say $e_1$ wlog. Then, since $e_1e_j = 0 \in \mathfrak{p}$ for any $j > 1$, we get $0 \times \prod_{i = 2}^n A_i \subset \mathfrak{p}$. The ideal $\mathfrak{p}' = \pi_1(\mathfrak{p})$ as $\mathfrak{p}$ is prime and contains the kernel of $\pi_1$, and then $\mathfrak{p} = \pi_1(\mathfrak{p}) \times \prod_{i = 2}^n A_i$. The description $\mathrm{Spec}(A) = \bigsqcup_{i = 1}^{n} \mathrm{Spec}(A_i)$ follows. 
+
+i) => ii) Let $Spec(A) = V(\mathfrak{a}) \cup V(\mathfrak{b})$ with $V(\mathfrak{a}), V(\mathfrak{b})$ disjoint and non-empty. Then $\mathfrak{a} \cap \mathfrak{b}$
+ii) => iii) Elements of the form $(0, 1)$ and $(1,0)$ in the product induce nontrivial idempotents in $A$
+iii) => i) Let $e$ be a nontrivial idempotent. We have $X = V(eA) \cup V((1-e)A) = V(0)$, both being nontrivial closed sets.

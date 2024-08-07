@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 1.md",
+                "file": "Atiyah-McDonald Exercices (Chapter 1).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "11f5eee4b8958514",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dimension of a free module.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4126344d8042e3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Smith reduction over a PID.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "da1b12668e08e082",
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapter 1.md",
+                "file": "Smith reduction over a PID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapter 1.md",
+                "file": "Smith reduction over a PID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 1.md"
+                "file": "Smith reduction over a PID.md"
               }
             }
           }
@@ -146,9 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8c3f89ada785ab95",
+  "active": "e4126344d8042e3d",
   "lastOpenFiles": [
-    "Chapter 1.md",
+    "Smith reduction over a PID.md",
+    "Dimension of a free module.md",
+    "Atiyah-McDonald Exercices (Chapter 1).md",
     "Welcome.md"
   ]
 }
