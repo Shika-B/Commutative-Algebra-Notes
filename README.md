@@ -1,0 +1,1 @@
+- [Smith reduction over a PID](https://github.com/Shika-B/Commutative-Algebra-Notes/blob/main/Smith%20reduction%20over%20a%20PID.pdf)

@@ -8,19 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ebb629374973a9bb",
+            "id": "bff2537a380fb666",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Smith reduction over a PID.md",
-                "mode": "source",
-                "source": false
+                "file": "Structure theorem of finitely generated modules over a PID.pdf"
               }
             }
           },
           {
-            "id": "1d8eec9bbc979ee4",
+            "id": "eb7cee3699f9f743",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,19 +30,19 @@
             }
           },
           {
-            "id": "bff2537a380fb666",
+            "id": "555a31189b1dedd3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PIDs are Noetherian.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Structure theorem of finitely generated modules over a PID.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Structure theorem of finitely generated modules over a PID.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Structure theorem of finitely generated modules over a PID.md"
+                "file": "README.md"
               }
             }
           }
@@ -171,12 +169,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1d8eec9bbc979ee4",
+  "active": "555a31189b1dedd3",
   "lastOpenFiles": [
-    "Applications of the structure theorem for module.md",
     "Structure theorem of finitely generated modules over a PID.md",
-    "Smith reduction over a PID.md",
+    "README.md",
+    "Structure theorem of finitely generated modules over a PID.pdf",
+    "Dimension of a free module.pdf",
     "PIDs are Noetherian.md",
+    "Smith reduction over a PID.md",
+    "PIDs are Noetherian.pdf",
+    "Atiyah-McDonald Exercices (Chapter 1).pdf",
+    "Applications of the structure theorem for module.pdf",
+    "build.py",
+    "Applications of the structure theorem for module.md",
     "PIDs are UFD.md",
     "Smith reduction over a PID.pdf",
     "Dimension of a free module.md",

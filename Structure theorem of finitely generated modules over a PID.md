@@ -1,6 +1,9 @@
 Prerequisites:
+
 - [[Smith reduction over a PID]]
+
 - [[PIDs are Noetherian]]
+
 - [[Dimension of a free module]]
 
 
@@ -8,7 +11,7 @@ Prerequisites:
 
 The goal is the following result:
 
-> (Structure theorem) Let $M$ be a finitely generated module over a PID $A$. Then we have an isomorphism $$M \simeq A^r \oplus A/(d_1) \oplus \ldots \oplus A/(d_k)$$ with $d_1 \mid \ldots \mid d_k$ nonzero and noninvertible. 
+> (Structure theorem) Let $M$ be a finitely generated module over a PID $A$. Then we have an isomorphism $$M \simeq A^r \oplus A/(d_1) \oplus \ldots \oplus A/(d_k)$$with $d_1 \mid \ldots \mid d_k$ nonzero and noninvertible. 
 > The $d_i$'s are called the invariant factors of $M$ and are unique up to multiplication by units.
 
 Recall that a *noetherian module* is a module such that any submodule is finitely generated. We have
@@ -37,7 +40,7 @@ Uniqueness may be [deduced from uniqueness in the Smith decomposition](https://m
 
 An immediate application by setting $A = \mathbb{Z}$ is
 > Any finitely generated abelian group is isomorphic to a group of the form $$\mathbb{Z}^r \oplus \mathbb{Z}/d_1 \oplus \ldots \mathbb{Z}/d_s$$
-> with integers $1 < d_1 \mid \ldots \mid d_s$. Moreover, the $d_i$'s satisfying this condition are unique.
+  with integers $1 < d_1 \mid \ldots \mid d_s$. Moreover, the $d_i$'s satisfying this condition are unique.
 
 ## Frobenius decomposition and $k[X]$-modules
 
@@ -45,4 +48,4 @@ When $E$ is a finite-dimensional $k$-vector space, an endomorphism $\varphi \in 
 
 The structure theorem gives $$E \simeq k[X]^r \oplus k[X]/(P_1) \oplus \ldots k[X]/(P_n)$$with unique $P_1 \mid \ldots \mid P_n$. As $E$ is finite dimensional, we must have $r = 0$, and we may assume the $P_i$ are monic and non-constant. 
 
-This decomposition is in particular a $k$-vector space isomorphism, and the subspaces $k[X]/(P_i)$ are *cyclic* subspaces (relatively to $\varphi$). It is the Frobenius decomposition of $E$ along $\varphi$.
+This decomposition is in particular a $k$-vector space isomorphism, and the subspaces $k[X]/(P_i)$ are *cyclic* subspaces (relatively to $\varphi$). It is the Frobenius decomposition of $E$ for $\varphi$.
