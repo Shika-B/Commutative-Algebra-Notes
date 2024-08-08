@@ -1,4 +1,4 @@
-These are some notes on commutative algebra I took. The LaTeX-ed pdf files are far from optimally typeset as their are built from obsidian-markdown files using Pandoc.
+These are some notes on commutative algebra I took. The LaTeX-ed pdf files are far from optimally typeset as their are built from obsidian-markdown files using Pandoc. Some links are broken: If you are unable to click on something that should be clickable in a pdf, get the link from the associated markdown file.
 
 To read the file as proper pdf, please open them from the links below and click on the download button on the top-right corner of the GitHub preview.
 

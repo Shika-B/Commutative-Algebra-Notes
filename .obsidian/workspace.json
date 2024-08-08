@@ -11,9 +11,11 @@
             "id": "bff2537a380fb666",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Structure theorem of finitely generated modules over a PID.pdf"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -41,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,11 +170,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "555a31189b1dedd3",
+  "active": "30015205915655da",
   "lastOpenFiles": [
+    "Atiyah-McDonald Exercices (Chapter 1).md",
+    "Structure theorem of finitely generated modules over a PID.pdf",
     "Structure theorem of finitely generated modules over a PID.md",
     "README.md",
-    "Structure theorem of finitely generated modules over a PID.pdf",
     "Dimension of a free module.pdf",
     "PIDs are Noetherian.md",
     "Smith reduction over a PID.md",
@@ -186,7 +188,6 @@
     "Smith reduction over a PID.pdf",
     "Dimension of a free module.md",
     "smith.pdf",
-    "Atiyah-McDonald Exercices (Chapter 1).md",
     "Welcome.md"
   ]
 }
