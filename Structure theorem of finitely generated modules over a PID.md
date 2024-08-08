@@ -29,3 +29,20 @@ As we already know that $N$ is finitely generated, we may write down the map $i:
 We may now prove the structure theorem. Let $M$ be as in the statement and $f: A^n \to M$ be surjective. The 1st isomorphism theorem gives $A^n/Ker(f) \simeq M$ and the adapted basis theorem gives $Ker(f) \simeq d_1A \oplus \ldots \oplus d_kA$. The existence part of the statement follows.
 
 Uniqueness may be [deduced from uniqueness in the Smith decomposition](https://mattbaker.blog/2022/11/21/fitting-ideals-of-modules/) or done directly through a careful study of the irreducible factors involved in the decomposition, as [done here](https://www.math.ens.psl.eu/shared-files/9312/?Algebre2%20NOV%202012.pdf).
+
+
+# Applications
+
+## Finitely generated abelian groups
+
+An immediate application by setting $A = \mathbb{Z}$ is
+> Any finitely generated abelian group is isomorphic to a group of the form $$\mathbb{Z}^r \oplus \mathbb{Z}/d_1 \oplus \ldots \mathbb{Z}/d_s$$
+> with integers $1 < d_1 \mid \ldots \mid d_s$. Moreover, the $d_i$'s satisfying this condition are unique.
+
+## Frobenius decomposition and $k[X]$-modules
+
+When $E$ is a finite-dimensional $k$-vector space, an endomorphism $\varphi \in \mathcal{L}(E)$ induces a $k[X]$-module structure on E, by setting $P \cdot v = P(\varphi)(v)$ for any $P \in k[X], v \in E$.
+
+The structure theorem gives $$E \simeq k[X]^r \oplus k[X]/(P_1) \oplus \ldots k[X]/(P_n)$$with unique $P_1 \mid \ldots \mid P_n$. As $E$ is finite dimensional, we must have $r = 0$, and we may assume the $P_i$ are monic and non-constant. 
+
+This decomposition is in particular a $k$-vector space isomorphism, and the subspaces $k[X]/(P_i)$ are *cyclic* subspaces (relatively to $\varphi$). It is the Frobenius decomposition of $E$ along $\varphi$.
