@@ -11,18 +11,18 @@ The goal is to show the following result
 
 Remark: It is clear that $r$ is uniquely determined, as it is equal to the rank of $M$ seen as a matrix of $\mathrm{Frac}(A)$. 
 
-## A special case: $A$ is an euclidean domain
+## Existence, a special case: $A$ is an euclidean domain
 
 Assume $A$ is euclidean, as it is the case when $A = \mathbb{Z}$ or $A = k[X]$ with $k$ a field. When that happens, everything may be done in a purely algorithmic fashion. 
 
-Let $v$ be the euclidean map of $A$. Also, let $\displaystyle t(M) = \min_{M_{i, j} \neq 0} v(M_{i, j})$ and $d(M)$ an arbitrary gcd of the coefficients of $M$. Since $d(M) | M_{i, j}$ for any $i, j$, we have $v(d(M)) \leq t(M)$, and in case of equality, $t(M)$ and $d(M)$ are associated. 
+Let $v$ be the euclidean map of $A$. Also, let $\displaystyle t(M) = \min_{M_{i, j} \neq 0} v(M_{i, j})$ and $d(M)$ an arbitrary gcd of the coefficients of $M$. Since $d(M) | M_{i, j}$ for any $i, j$, we have $v(d(M)) \leq t(M)$, and in case of equality, some coefficient of $M$ and $d(M)$ are associated. 
 
 There are two cases: 
 
 Case 1, if $v(d(M)) = t(M)$: 
 
-We must have $t(M) \mid M_{i, j}$ for any $i, j$.  Up to elementary row operations, we may assume $dM_{1,1}$ is such that $v(M_{1,1}) = t(M)$. Let $(L_i)_{1 \leq i \leq n}$ be the lines of $M$. 
-The elementary row operations $\displaystyle L_i \leftarrow L_i - \frac{M_{1, i}}{M_{1,1}}L_1$ transform the first column to the form $\begin{pmatrix} M_{1,1} \\ 0 \\ \vdots \\ 0\end{pmatrix}$while not changing that $M_{1,1}$ divides all the coefficients of the new matrix. Similar column operations give a first line of the first $\begin{pmatrix} M_{1,1} & 0 & \ldots & 0\end{pmatrix}$, and the matrix can now be written as $$\begin{pmatrix} 
+Up to elementary row operations, we may assume $M_{1,1}$ is such that $v(M_{1,1}) = t(M)$. We must have $M_{1,1} \mid M_{i, j}$ for any $i, j$.  Let $(L_i)_{1 \leq i \leq n}$ be the lines of $M$. 
+The elementary row operations $\displaystyle L_i \leftarrow L_i - \frac{M_{1, i}}{M_{1,1}}L_1$ transform the first column to the form $\begin{pmatrix} M_{1,1} \\ 0 \\ \vdots \\ 0\end{pmatrix}$while not changing that $M_{1,1}$ divides all the coefficients of the new matrix. Similar column operations give a first line of the form $\begin{pmatrix} M_{1,1} & 0 & \ldots & 0\end{pmatrix}$, and the matrix can now be written as $$\begin{pmatrix} 
 	M_{1,1} & \begin{matrix} 0 & \ldots & 0 \end{matrix} \\ 
 	\begin{matrix} 0 \\ \vdots \\ 0 \end{matrix} & N 
 	\end{pmatrix}$$
@@ -46,7 +46,7 @@ Case 2.2, we know $M_{1, 1}$ divides all the coefficients in the first line/colu
 There is, by hypothesis, some coefficient of $N$ that's not divisible by $M_{1,1}$. By adding the corresponding line to the first line, we are back to the case 2.1).
 
 
-## The general case
+## Existence, the general case
 
 We cannot do everything through euclidean division and elementary operations anymore. The replacement is the following lemma.
 
@@ -71,7 +71,23 @@ Through the induction hypothesis applied to N and block multiplications we get t
  \end{pmatrix}$$ with $p_2 \mid \ldots \mid p_r$. 
  To get $p_1$ dividing $p_2$, we add the second line to the first and repeat the process as above. Since the new $p_2$ may not divide $p_3$, we repeat the procedure until we reach $p_r$. We are done.
 
-### References (clickable)
-The [general case](https://www.math.ens.psl.eu/shared-files/9312/?Algebre2%20NOV%202012.pdf)
+Back to the lemma. We argue by induction once again. The case $s = 1$ is obvious. Assume the result is true for some $s - 1 \geq 1$. Let $N$ be a $(s-1) \times (s-1)$  matrix satisfying the induction hypothesis applied to $a_2, \ldots, a_s$. Let $d$ be the determinant of $N$ and let $x, y \in A$ so that $a_1x + dy = d'$ where $d'$ is a gcd of $\{a_1, \ldots, a_s\}$.  Consider the matrix $$\begin{pmatrix}
+\begin{matrix}a_1 \\ 0 \\  \vdots \\ \end{matrix} & N \\
+(-1)^{s-1}y & \begin{matrix} (-1)^s \frac{a_2x}{d} & \ldots & (-1)^s \frac{a_sx}{d}\end{matrix}
+\end{pmatrix}$$
+Developing the determinant along the first column proves that the determinant is equal to $d'$, as desired. 
+
+## Uniqueness
+
+The statement we must prove is also that the $r$-tuple $(d_1, \ldots, d_r)$ is unique up to multiplication by units. To do that, we define the quantity $\delta_k(M)$ as the $gcd$ of all the $k \times k$ minors of $M$. We will prove 
+
+> For any matrix $P$ and any $k$, $\delta_k(M)$ divides $\delta_k(PM)$
+
+It will follow that $\delta_k(M)$ and $\delta_k(PMQ)$ are associated whenever $P, Q$ are invertible. In Smith normal form, we easily see that $\delta_k(M) = d_1 \ldots d_k$ when $k \leq r$ and then $\delta_k(M) = 0$ when $k > r$, and thus we can recover the invariant factors intrisically.
+
+To show the proposition, observe that the lines of $PM$ are linear combinations of the lines of $M$, and using n-linearity of the determinant, the result follows.
+
+## References (clickable)
+The [general case and uniqueness](https://www.math.ens.psl.eu/shared-files/9312/?Algebre2%20NOV%202012.pdf) 
 
 The [euclidean case](https://www3.nd.edu/~sevens/smithform.pdf)
