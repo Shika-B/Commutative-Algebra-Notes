@@ -5,7 +5,7 @@ To read the file as proper pdf, please open them from the links below and click 
  
 ## Summary
 
-- [Solutions](https://github.com/Shika-B/Commutative-Algebra-Notes/blob/main/Atiyah-McDonald%20Exercices%20(Chapter%201).pdf) to some exercises of the first chapter of Atiyah-Mcdonald.
+- [Solutions](https://github.com/Shika-B/Commutative-Algebra-Notes/blob/main/Atiyah-McDonald%20Exercices%20(Chapter%201).pdf) to some exercises of the 1st chapter of Atiyah-Mcdonald.
 - [PIDs are Noetherian](https://github.com/Shika-B/Commutative-Algebra-Notes/blob/main/PIDs%20are%20Noetherian.pdf)
 - [Dimension of a free module is well-defined](https://github.com/Shika-B/Commutative-Algebra-Notes/blob/main/Dimension%20of%20a%20free%20module.pdf)
 - [Smith reduction over a PID](https://github.com/Shika-B/Commutative-Algebra-Notes/blob/main/Smith%20reduction%20over%20a%20PID.pdf)
